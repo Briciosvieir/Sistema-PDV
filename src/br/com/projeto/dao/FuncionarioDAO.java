@@ -4,13 +4,13 @@ package br.com.projeto.dao;
 import br.com.projeto.jdbc.ConnectionFactory;
 import br.com.projeto.model.Funcionarios;
 import java.awt.HeadlessException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 
 /**
@@ -69,12 +69,14 @@ public void cadastrarFuncionario(Funcionarios obj){
         try {
             
             List<Funcionarios> lista = new ArrayList<>();
+            
             String sql ="SELECT * FROM tb_funcionarios";
             PreparedStatement stmt = con.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
             
             while(rs.next()){
                 Funcionarios obj = new Funcionarios();
+                
                 obj.setId(rs.getInt("id"));
                 obj.setNome(rs.getString("nome"));
                 obj.setRg(rs.getString("rg"));
@@ -92,6 +94,7 @@ public void cadastrarFuncionario(Funcionarios obj){
                 obj.setBairro(rs.getString("bairro"));
                 obj.setCidade(rs.getString("cidade"));
                 obj.setEstado(rs.getString("estado"));
+                lista.add(obj);
             
             
             }
