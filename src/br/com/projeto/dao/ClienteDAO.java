@@ -141,7 +141,7 @@ public class ClienteDAO {
     }
     
     
-            //METODO QUE PESQUISA CLIENTE POR NOME.
+            //METODO QUE PESQUISA CLIENTE E RETORNA UMA LISTA.
        public List<Clientes>buscaClientePorNome(String nome){
         try {
            List<Clientes>lista = new ArrayList<>(); 
@@ -179,7 +179,7 @@ public class ClienteDAO {
             
         }
         
-    }   // retorna uma uma pessoa por nome
+    }   //  RETORNA APENAS 1 PESSOA POR NOME
        public Clientes pesquisaDeUmCliente(String nome){
            
            try { 
