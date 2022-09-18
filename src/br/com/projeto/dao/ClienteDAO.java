@@ -141,7 +141,7 @@ public class ClienteDAO {
     }
     
     
-            //METODO QUE PESQUISA CLIENTE E RETORNA UMA LISTA.
+            //METODO QUE PESQUISA CLIENTE POR NOME.
        public List<Clientes>buscaClientePorNome(String nome){
         try {
            List<Clientes>lista = new ArrayList<>(); 

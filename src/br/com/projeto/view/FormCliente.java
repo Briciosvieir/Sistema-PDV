@@ -405,22 +405,6 @@ public class FormCliente extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(tabelaClientes);
-        if (tabelaClientes.getColumnModel().getColumnCount() > 0) {
-            tabelaClientes.getColumnModel().getColumn(0).setHeaderValue("Código");
-            tabelaClientes.getColumnModel().getColumn(1).setHeaderValue("Nome");
-            tabelaClientes.getColumnModel().getColumn(2).setHeaderValue("RG");
-            tabelaClientes.getColumnModel().getColumn(3).setHeaderValue("CPF");
-            tabelaClientes.getColumnModel().getColumn(4).setHeaderValue("E-mail");
-            tabelaClientes.getColumnModel().getColumn(5).setHeaderValue("Telefone");
-            tabelaClientes.getColumnModel().getColumn(6).setHeaderValue("Celular");
-            tabelaClientes.getColumnModel().getColumn(7).setHeaderValue("Cep");
-            tabelaClientes.getColumnModel().getColumn(8).setHeaderValue("Endereço");
-            tabelaClientes.getColumnModel().getColumn(9).setHeaderValue("Numero");
-            tabelaClientes.getColumnModel().getColumn(10).setHeaderValue("Comple");
-            tabelaClientes.getColumnModel().getColumn(11).setHeaderValue("Bairro");
-            tabelaClientes.getColumnModel().getColumn(12).setHeaderValue("Cidade");
-            tabelaClientes.getColumnModel().getColumn(13).setHeaderValue("UF");
-        }
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
